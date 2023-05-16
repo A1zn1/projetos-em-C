@@ -1,3 +1,5 @@
+// Codigo para saber se o triângulo existe e saber qual a categoria do triângulo
+
 #include <stdio.h>
 float lado1, lado2, lado3;
 int main(void) {
