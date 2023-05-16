@@ -1,6 +1,8 @@
 {
     "git.ignoreLimitWarning": true,
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "maior ou menor número": "c",
+        "calcula a media de uma sequencia": "c"
     }
 }

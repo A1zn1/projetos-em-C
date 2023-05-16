@@ -1,4 +1,7 @@
-// Codigo para saber se o triângulo existe e saber qual a categoria do triângulo
+// Programa: Verificação e categoria de triângulo
+// Descrição: Este programa solicita ao usuário os comprimentos dos três lados de um triângulo.
+//            Em seguida, verifica se os lados inseridos formam um triângulo e determina a categoria do triângulo.
+//            As categorias possíveis são: equilátero (todos os lados iguais), isósceles (dois lados iguais) ou escaleno (todos os lados diferentes).
 
 #include <stdio.h>
 float lado1, lado2, lado3;
