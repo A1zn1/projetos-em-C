@@ -1,7 +1,10 @@
-// Programa: Múltiplos de um número
-// Descrição: Este programa solicita ao usuário um número e o valor do múltiplo.
-//            Em seguida, calcula e exibe os múltiplos do número fornecido até o múltiplo especificado.
-//            Caso o usuário insira um valor de múltiplo negativo ou zero, o programa solicitará novamente um valor válido.
+/**************************************************************
+ * Programa: Jogo de Adivinhação                               *
+ * Descrição: O programa gera um número secreto e o jogador    *
+ *            deve tentar adivinhar esse número. A pontuação   *
+ *            do jogador é calculada com base no número de     *
+ *            tentativas e no nível de dificuldade escolhido.  *
+ **************************************************************/
 
 #include <stdio.h>
 
