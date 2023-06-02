@@ -1,3 +1,10 @@
+/**************************************************************
+ * Programa: Jogo de Adivinhação                               *
+ * Descrição: O programa gera um número secreto e o jogador    *
+ *            deve tentar adivinhar esse número. A pontuação   *
+ *            do jogador é calculada com base no número de     *
+ *            tentativas e no nível de dificuldade escolhido.  *
+ **************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
