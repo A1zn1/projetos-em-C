@@ -141,7 +141,7 @@ int main(void){
             break;
         }
 
-        if (tentativas >= MAX_TENTATIVAS) {
+        if (tentativas > MAX_TENTATIVAS) {
             printf("    _______________         \n");
 		printf("   /               \\       \n"); 
 		printf("  /                 \\      \n");
