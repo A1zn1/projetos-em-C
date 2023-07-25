@@ -109,10 +109,12 @@ void chutarletra(){
         }
     }
 int main(void){
+    
+    do{ 
     escolherpalavra(); 
     inicializar_letra_acertada();
        
-    do {    
+    while(1){    
         desenhar_forca(); 
         verificaletra();
         chutarletra();
@@ -156,10 +158,21 @@ int main(void){
 		printf("   \\_             _/       \n");
 		printf("     \\_         _/         \n");
 		printf("       \\_______/           \n");
-        printf("\n     Você velhou!           ");    
+        printf("\n     Você velhou!         \n");    
             break;
         }
         
-    } while(1);
+    }
+        char jogar_novamente;
+        printf("\nDeseja jogar novamente? (S/N)");
+        scanf(" %c", &jogar_novamente);
+        jogar_novamente = toupper(jogar_novamente);
+        if(jogar_novamente == 'N'){
+            break;
+        }
+        else{
+            tentativas = 0;
+        }
+        }while(1);
     return 0;
 }
