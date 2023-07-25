@@ -158,7 +158,7 @@ int main(void){
 		printf("   \\_             _/       \n");
 		printf("     \\_         _/         \n");
 		printf("       \\_______/           \n");
-        printf("\n     Você velhou!         \n");    
+        printf("\n     Você perdeu!         \n");    
             break;
         }
         
