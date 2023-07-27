@@ -24,17 +24,6 @@ char palavras[NUM_PALAVRAS][TAMANHO_PALAVRAS]={
     "BISCOITO"    
 };
 
-void verificaacertos(){
-    
-    int letras_acertadas = 0;
-        for (int i = 0; i < strlen(palavrasecreta); i++) {
-            if (letras_acertada[palavrasecreta[i] - 'A'] == 1) {
-                letras_acertadas++;
-            }
-        }
-    
-}
-
 void escolherpalavra(){
     srand(time(NULL));
     int randomico = rand()%NUM_PALAVRAS;
