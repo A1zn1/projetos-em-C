@@ -23,8 +23,9 @@ void cadastro() {
         NewUser.ID = proxID + 1; 
         data[proxID] = NewUser;
         proxID++;
+        printf("\nUsuário %s Cadastrado!\n",NewUser.nome);
     } else {
-        printf("Limite excedido de usuários!\n");
+        printf("\nLimite excedido de usuários!\n");
     }
 }
 
@@ -72,11 +73,10 @@ void update(int id){
             scanf("%s",data[i].nome);
             printf("Qual a nova idade?: ");
             scanf("%d",&data[i].idade);
-        }
-        else{
-            printf("Usuário não encontrado!\n");
+            return;
         }
     }
+    printf("\nUsuário não encontrado!\n");
 }
 
 void deletar(int id){
@@ -112,10 +112,10 @@ int main(void){
         printf("#    MENU DE CADASTRO   #\n");
         printf("#########################\n");
         printf("\n");
-        printf("1. Cadastrar Usuário\n");
-        printf("2. Listas de Usuários\n");
-        printf("3. Atualizar um Usuário\n");
-        printf("4. Deletar um Usuário\n");
+        printf("1. Cadastrar Usuário:\n");
+        printf("2. Listas de Usuários:\n");
+        printf("3. Atualizar dados:\n");
+        printf("4. Deletar dados:\n");
         printf("5. Sair\n");
         printf("Escolha uma opção: ");
         scanf("%d", &escolha);
@@ -136,6 +136,7 @@ int main(void){
                 printf("Qual ID usuário que você deseja deletar?: \n");
                 scanf("%d",&apagar);
                 deletar(apagar);
+                break;
             case 5:
                 salvardados();
                 printf("Salvando Dados...Dados Salvos!\n");
@@ -144,7 +145,7 @@ int main(void){
             default:
                 printf("Opção inválida. Tente novamente.\n");
         }
-    } while (escolha != 3);
+    } while (escolha != 5);
 
     return 0;
 }
