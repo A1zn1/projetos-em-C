@@ -73,6 +73,7 @@ void update(int id){
             scanf("%s",data[i].nome);
             printf("Qual a nova idade?: ");
             scanf("%d",&data[i].idade);
+            printf("\nUsuário do ID %d Atualizado!\n",data[i].ID);
             return;
         }
     }
@@ -84,16 +85,19 @@ void deletar(int id){
 
     for(int i = 0; i < proxID; i++){
         if(data[i].ID == id){
-            indice = i;
+            indice = id;
             break;
         }
     }
 
     if(indice != -1){
-        for(int i = indice; indice < proxID - 1; i++){
+        for(int i = indice; i < proxID - 1; i++){
             data[i] = data[i+1];
         }
         proxID--;
+        for(int i = 0; i < proxID; i++){
+            data[i].ID = i + 1;
+        }
         printf("Usuário removido com sucesso!\n");
     }
     else{
