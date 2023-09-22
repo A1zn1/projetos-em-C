@@ -85,7 +85,7 @@ void deletar(int id){
 
     for(int i = 0; i < proxID; i++){
         if(data[i].ID == id){
-            indice = id;
+            indice = i;
             break;
         }
     }
